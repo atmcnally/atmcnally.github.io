@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National Parks Remote Explorer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css"/>
+    <meta charset="utf-8">
+</head>
+<body style="background-image: url(wood-backdrop.jpg);">
+
+    <nav class="nav-justified shadow">
+        <ul class="nav nav-fill">
+          <li class="">
+            <a class="nav-link nav-item" href="park.html">General Information</a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-item active" href="visit.html">Visitor Centers and Campgrounds</a>
+          </li>
+        </ul>
+        <div class="navbar-brand">
+            <a href="index.html" class="shadow">
+                <img id="logo" class="" src="nps-logo.png">
+            </a>
+            </div>
+        <ul class="nav nav-fill">
+          <li class="">
+            <a class="nav-link nav-item" href="news.html">News and Events</a>
+          </li>
+            <li class="">
+            <a class="nav-link nav-item" href="learn.html">Learning</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!--<h1 id=title>Loading</h1>-->
+    
+<!-- visitor center info -->
+    
+    <h4 class="onWood" id="vcTitle">Visitor Centers</h4>
+    <div id="vcWrapper">
+        <div id="origVC" class="locationCard visitorCenter">
+
+            <h2 id="centerName"><a class="centerUrl" href="#">Loading</a></h2>
+            <p class="centerDescription"></p>
+
+            <h2 class="mapTitle"></h2>
+            <!-- map??? -->
+
+            <div id="map"></div>
+
+            <h2>Directions</h2>
+            <p class="directionsInfo"></p>
+            <h3><a class="directionsUrl" href="#">Click for Direction Details</a></h3>
+        </div>
+    </div>
+<!-- campground info -->
+    <h4 class="onWood" id="campTitle">Campgrounds</h4>
+    <div id="cWrapper">    
+        <div id="origC" class="locationCard campground">
+        
+            <h2 class="campgroundName">Loading</h2>
+            <p class="campgroundDescription"></p>
+
+            <h3 class="weatherTitle">Weather</h3>
+            <p class="weatherInfo"></p>
+        
+        
+            <div class="accordion" id="campgroundAccordion">
+
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Campsites
+                    </button>
+                  </h5>
+                </div>
+
+                <div class="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#campgroundAccordion">
+                  <div class="card-body">
+                    
+                        <table class="costTable" id="feesBox" border="1">
+                            <p class="campsites">
+                            <tr><th>Title</th><th>Description</th></tr>
+                                <tr><td>Total Sites</td><td class="totalsites"></td></tr>
+                                <tr><td>Tent Only</td><td class="tentonly"></td></tr>
+                                <tr><td>Electrical Hookups</td><td class="electricalhookups"></td></tr>
+                                <tr><td>RV Only</td><td class="rvonly"></td></tr>
+                                <tr><td>Walk Boat To</td><td class="walkboatto"></td></tr>
+                                <tr><td>Horse</td><td class="horse"></td></tr>
+                                <tr><td>Group</td><td class="group"></td></tr>
+                                <tr><td>Other</td><td class="other"></td></tr>
+                                
+                            </p>
+                        </table>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accessibility
+                    </button>
+                  </h5>
+                </div>
+                <div class="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#campgroundAccordion">
+                  <div class="card-body">
+                    
+                      <table class="costTable" id="feesBox" border="1">
+                            <p class="accessibility">
+                            <tr><th>Title</th><th>Policy</th></tr>
+                                <tr><td>ADA Info</td><td class="adaInfo"></td></tr>
+                                <tr><td>Wheelchair Access</td><td class="wheelchairAccess"></td></tr>
+                                <tr><td>Internet Info</td><td class="internetInfo"></td></tr>
+                                <tr><td>Cell Phone Info</td><td class="cellPhoneInfo"></td></tr>
+                                <tr><td>RV Allowed?</td><td class="rvAllowed"></td></tr>
+                                <tr><td>RV Info</td><td class="rvInfo"></td></tr>
+                                <tr><td>RC Max Length</td><td class="rvMaxLength"></td></tr>
+                                <tr><td>Trailer Allowed?</td><td class="trailerAllowed"></td></tr>
+                                <tr><td>Trailer Max Length</td><td class="trailerMaxLength"></td></tr>
+                                <tr><td>Fire Stove Policy</td><td class="fireStovePolicy"></td></tr>
+                                <tr><td>Additional Info</td><td class="additionalInfo"></td></tr>
+                            </p>
+                        </table>
+                      
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Amenities
+                    </button>
+                  </h5>
+                </div>
+                <div class="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#campgroundAccordion">
+                  <div class="card-body">
+                      <p class="amenities">
+                        Incomplete due to time, but would look similar to "Campsites" and "Accessibility" dropdowns above.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+    </div>
+    
+<script src="visit.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                                                               
+</body>
+
+</html>

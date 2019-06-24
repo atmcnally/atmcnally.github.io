@@ -1,0 +1,469 @@
+h1 {
+    font-family: NationalPark-Outline;
+    text-align: center;
+    font-size: 7em;
+    color: rgba(255, 254, 249, 1);
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    color: rgba(10, 9, 8, 1);
+}
+
+h3 {
+    font-family: NationalPark-Heavy;
+    font-size: 2em;
+    color: rgba(10, 9, 8, 1);
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-family: NationalPark-Regular;
+    text-align: center;
+    font-size: 2.5em;
+    margin: .7em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 254, 249, 1);
+    font-size: 20px;
+}
+
+a {
+    color: rgba(64, 89, 40, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(107, 43, 6, 1);
+}
+
+/*
+green: rgba(64, 89, 40, 1);
+brown: rgba(107, 43, 6, 1);
+white: rgba(255, 254, 249, 1);
+black: rgba(10, 9, 8, 1);
+tan: rgba(204, 192, 132, 1);
+*/
+
+body {
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+}
+
+.noshadow {
+    -webkit-box-shadow: 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px rgba(0,0,0,0);
+    box-shadow: 0px rgba(0,0,0,0);
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    width: 75%;
+    background-color: rgba(204, 192, 132, 1);
+    margin-top: 3em;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    border: 4px solid rgba(107, 43, 6, 1);
+    padding: 5px;
+    margin: 2px;
+    height: 45px;
+    border-radius: 7px;
+    outline: none;
+    color: rgba(64, 89, 40, 1);
+}
+
+.searchTerm:focus{
+  //color: #00B4CC;
+}
+
+.searchButton {
+    width: auto;
+    height: 45px;
+    margin: 2px;
+    padding: 1px;
+    border: none;
+    background: rgba(107, 43, 6, 1);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 254, 249, 1);
+    font-family: 'Source Serif Pro', serif;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    margin: 0 40px;
+}
+
+.nav-fill {
+    width: 45%;
+}
+
+.navbar-brand {
+    width: 8%;
+    height: auto;
+    padding: 0;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    margin-left: -5%;
+}
+
+#logo {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    margin-top: -3em;
+    margin-left: -3em;
+    background-image: url(nps-logo-backdrop.png);
+    background-position: center;
+    background-size: cover;
+    /*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 54%, 63% 100%, 35% 100%, 0 57%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 54%, 63% 100%, 35% 100%, 0 57%, 0 0);*/
+}
+
+.active {
+    color: saddlebrown;
+}
+
+#intro {
+    position: relative;
+    cursor: pointer;
+    color: rgba(255, 254, 249, 1);
+    margin: 3em;
+    z-index: 99;
+}
+
+#intro h1 {
+    text-align: right;
+    margin-right: 1em;
+}
+
+#intro p {
+    width: 80%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+#slideshow {
+    background: rgba(10, 9, 8, 1);
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#slideshow img {
+    position: absolute;
+    /*min-width: 100%;*/
+    min-height: 100% !important;
+    width: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.3) rotate(10deg);
+    animation: CrossFade 48s infinite;
+}
+
+#mapid {
+    width: 75%;
+    height: 400px;
+    margin: 4em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mapTitle {
+    color: rgba(255, 254, 249, 1);
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+#parkInfoBoxes {
+    margin: 2em;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  cursor: pointer;
+  color: rgba(255, 254, 249, 1);
+  display: flex;
+  align-items: center;
+}
+
+.containerTab {
+    padding: 3em;
+    color: rgba(255, 254, 249, 1);
+    display: none;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.boxText {
+    margin-right: 2em;
+}
+
+.row {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: rgba(255, 254, 249, 1);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.costTable {
+    /*font-size: 12px;*/
+    color: rgba(10, 9, 8, 1);;
+    width:100%;
+    border-width: 1px;
+    border-color: rgba(10, 9, 8, 1);;
+    border-collapse: collapse;
+}
+
+.costTable th {
+    font-size:12px;
+    background-color: rgba(204, 192, 132, 1);
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: rgba(64, 89, 40, 1);;
+    text-align: left;
+}
+
+.costTable tr {
+    background-color: rgba(255, 254, 249, 1);;
+}
+
+.costTable td {
+    font-size:12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: rgba(204, 192, 132, 1);
+}
+
+.onWood {
+    color: rgba(255, 254, 249, 1);
+    margin: 1em;
+}
+
+.locationCard {
+    
+    background-color: rgba(204, 192, 132, 1);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: rgba(255, 254, 249, 1);;
+  border: none;
+  color: rgba(107, 43, 6, 1);;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#navigationButtons {
+    margin: 100px;
+}
+
+.article {
+    background: rgba(255, 254, 249, 1);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    height: auto;
+}
+
+.articleImg {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    
+}
+
+.description {
+    color: rgba(10, 9, 8, 1);
+}
+@-moz-keyframes CrossFade {
+  20% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes CrossFade {
+  20% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes CrossFade {
+  20% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes CrossFade {
+  20% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@font-face {
+  font-family: 'NationalPark-Thin';
+  src: url('Fonts/NationalPark-Thin.eot');
+  src: url('Fonts/NationalPark-Thin.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/NationalPark-Thin.svg#NationalPark-Thin') format('svg'),
+       url('Fonts/NationalPark-Thin.ttf') format('truetype'),
+       url('Fonts/NationalPark-Thin.woff') format('woff'),
+       url('Fonts/NationalPark-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NationalPark-Heavy';
+  src: url('Fonts/NationalPark-Heavy.eot');
+  src: url('Fonts/NationalPark-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/NationalPark-Heavy.svg#NationalPark-Heavy') format('svg'),
+       url('Fonts/NationalPark-Heavy.ttf') format('truetype'),
+       url('Fonts/NationalPark-Heavy.woff') format('woff'),
+       url('Fonts/NationalPark-Heavy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NationalPark-Regular';
+  src: url('Fonts/NationalPark-Regular.eot');
+  src: url('Fonts/NationalPark-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/NationalPark-Regular.svg#NationalPark-Regular') format('svg'),
+       url('Fonts/NationalPark-Regular.ttf') format('truetype'),
+       url('Fonts/NationalPark-Regular.woff') format('woff'),
+       url('Fonts/NationalPark-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NationalPark-Outline';
+  src: url('Fonts/NationalPark-Outline.eot');
+  src: url('Fonts/NationalPark-Outline.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/NationalPark-Outline.svg#NationalPark-Outline') format('svg'),
+       url('Fonts/NationalPark-Outline.ttf') format('truetype'),
+       url('Fonts/NationalPark-Outline.woff') format('woff'),
+       url('Fonts/NationalPark-Outline.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

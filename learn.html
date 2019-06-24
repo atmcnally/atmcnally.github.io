@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National Parks Remote Explorer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css"/>
+    <meta charset="utf-8">
+</head>
+<body style="background-image: url(wood-backdrop.jpg);">
+
+    <nav class="nav-justified shadow">
+        <ul class="nav nav-fill">
+          <li class="">
+            <a class="nav-link nav-item" href="park.html">General Information</a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-item active" href="visit.html">Visitor Centers and Campgrounds</a>
+          </li>
+        </ul>
+        <div class="navbar-brand">
+            <a href="index.html" class="shadow">
+                <img id="logo" class="" src="nps-logo.png">
+            </a>
+            </div>
+        <ul class="nav nav-fill">
+          <li class="">
+            <a class="nav-link nav-item" href="news.html">News and Events</a>
+          </li>
+            <li class="">
+            <a class="nav-link nav-item" href="learn.html">Learning</a>
+          </li>
+        </ul>
+    </nav>
+    
+    <div id="navigationButtons">
+        <h1>
+            <button class="button"><a href="articles.html"><span>Articles </span></a></button>
+            <button class="button"><a href="people.html"><span>People </span></a></button>
+            <button class="button"><a href="places.html"><span>Places </span></a></button>
+            <button class="button"><a href="lessonplans.html"><span>Lesson Plans </span></a></button>
+        </h1>
+        </div>
+    <div class="container"
+     data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false }'>
+
+//append objects in here
+
+</div>
+
+    
+<script src="visit.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW1jbmFsbHkiLCJhIjoiY2p4OTFraGZsMGhrbzQwbW5ldWtxZDFlOCJ9.rvVw4Hhr1QTNrI2fLnnSFA';
+var map = new mapboxgl.Map({
+container: 'map', // container id
+style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+center: [-74.50, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
+                                                               
+</body>
+
+</html>
