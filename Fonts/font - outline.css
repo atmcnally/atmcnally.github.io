@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NationalPark-Outline';
+  src: url('NationalPark-Outline.eot');
+  src: url('NationalPark-Outline.eot?#iefix') format('embedded-opentype'),
+       url('NationalPark-Outline.svg#NationalPark-Outline') format('svg'),
+       url('NationalPark-Outline.ttf') format('truetype'),
+       url('NationalPark-Outline.woff') format('woff'),
+       url('NationalPark-Outline.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

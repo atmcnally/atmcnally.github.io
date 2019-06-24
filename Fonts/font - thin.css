@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NationalPark-Thin';
+  src: url('NationalPark-Thin.eot');
+  src: url('NationalPark-Thin.eot?#iefix') format('embedded-opentype'),
+       url('NationalPark-Thin.svg#NationalPark-Thin') format('svg'),
+       url('NationalPark-Thin.ttf') format('truetype'),
+       url('NationalPark-Thin.woff') format('woff'),
+       url('NationalPark-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

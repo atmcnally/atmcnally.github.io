@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NationalPark-Regular';
+  src: url('NationalPark-Regular.eot');
+  src: url('NationalPark-Regular.eot?#iefix') format('embedded-opentype'),
+       url('NationalPark-Regular.svg#NationalPark-Regular') format('svg'),
+       url('NationalPark-Regular.ttf') format('truetype'),
+       url('NationalPark-Regular.woff') format('woff'),
+       url('NationalPark-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
